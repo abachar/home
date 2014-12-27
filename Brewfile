@@ -1,3 +1,4 @@
+# Install Brews
 install nvm
 install rbenv ruby-build
 install gradle
@@ -7,6 +8,10 @@ install groovy
 install sbt
 install vert.x
 
+# Install Cask
+install caskroom/cask/brew-cask
+
+# Install Casks
 cask install caskroom/versions/java7
 cask install sublime-text
 cask install moom
