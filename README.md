@@ -6,7 +6,7 @@ First install and launch Xcode, after that configure Command Line Tools.
 
 #### Install all
 ```bash
-(mkdir -p /tmp/install && cd /tmp/install && curl -L# https://github.com/abachar/home/archive/master.zipz | tar zx --strip 1 && sh ./install.sh)
+(mkdir -p /tmp/install && cd /tmp/install && curl -L# https://github.com/abachar/home/archive/master.zip | tar zx --strip 1 && sh ./install.sh)
 ```
 
 #### Manual Installation
