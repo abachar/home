@@ -18,7 +18,7 @@ packages=(
 applications=(
   sublime-text
   moom
-  # caffeine
+  caffeine
   evernote
   webstorm
   intellij-idea
@@ -65,10 +65,7 @@ rbenv global $ruby_ver
 #
 # Copy dot files
 echo "Copying dot files..."
-cp .bash_profile $HOME/
-cp .bashrc $HOME/
-cp .gitconfig $HOME/
-cp .vimrc $HOME/
+cp .bash_profile .bashrc .gitconfig .vimrc $HOME/
 
 #
 # Done.
