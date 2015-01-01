@@ -8,7 +8,7 @@ cp .gitconfig $HOME/
 cp .vimrc $HOME/
 
 echo "Sourcing .bash_profile"
-source $HOME/.bash_profile
+# source $HOME/.bash_profile
 
 # Installing homebrew
 echo "Installing homebrew..."
@@ -57,5 +57,5 @@ brew cask install ${applications[@]}
 #
 # Install node
 #
-nvm install 0.10.35
-nvm use 0.10.35
+#nvm install 0.10.35
+#nvm use 0.10.35
