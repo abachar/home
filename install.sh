@@ -1,25 +1,8 @@
 #!/bin/sh
+node_ver=0.10.35
+ruby_ver=2.2.0
 
-# Copy dot files
-echo "Copying dot files..."
-cp .bash_profile $HOME/
-cp .bashrc $HOME/
-cp .gitconfig $HOME/
-cp .vimrc $HOME/
-
-echo "Sourcing .bash_profile"
-# source $HOME/.bash_profile
-
-# Installing homebrew
-echo "Installing homebrew..."
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# Update homebrew
-brew update
-
-#
 # Brew packages
-#
-echo "installing brew packages..."
 packages=(
   nvm
   rbenv ruby-build
@@ -30,13 +13,8 @@ packages=(
   sbt
   vert.x
 )
-brew install ${packages[@]}
-brew cleanup
 
-#
-# Cask packages
-#
-echo "installing applications..."
+# Cask applications
 applications=(
   sublime-text
   moom
@@ -51,11 +29,45 @@ applications=(
   virtualbox
   # utorrent
 )
+
+#
+# Installing homebrew
+echo "Installing homebrew..."
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+
+#
+# Brew packages
+echo "installing brew packages..."
+brew install ${packages[@]}
+brew cleanup
+
+#
+# Cask packages
+echo "installing applications..."
 brew install caskroom/cask/brew-cask
 brew cask install ${applications[@]}
 
 #
 # Install node
+export NVM_DIR=~/.nvm
+nvm install $node_ver
+nvm use $node_ver
+
 #
-#nvm install 0.10.35
-#nvm use 0.10.35
+# Install ruby
+export RBENV_ROOT=~/.rbenv
+rbenv install $ruby_ver
+rbenv global $ruby_ver
+
+#
+# Copy dot files
+echo "Copying dot files..."
+cp .bash_profile $HOME/
+cp .bashrc $HOME/
+cp .gitconfig $HOME/
+cp .vimrc $HOME/
+
+#
+# Done.
+echo "Done!, please restart your bash."
