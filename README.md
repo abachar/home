@@ -5,8 +5,10 @@ This is how i install applications and utilities on a new OS X machine
 First install and launch Xcode, after that configure Command Line Tools.
 
 #### Clone abachar/home
+Clone this repo in your home directory
 ```bash
 git clone https://github.com/abachar/home.git
+mv home/* home/.[^.]* .
 ```
 
 #### Install homebrew
@@ -17,12 +19,13 @@ brew doctor
 
 #### Install Applications
 ```bash
-brew bundle
+chmod +x install.sh
+./install.sh
 ```
 
 #### Clean
 ```bash
-rm -rf .git Brewfile LICENSE README.md
+rm -rf .git install.sh LICENSE README.md
 ```
 
 #### Manual Installation
