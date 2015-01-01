@@ -3,33 +3,40 @@
 #
 # Brew packages
 #
-brew install nvm
-brew install rbenv ruby-build
-brew install gradle
-brew install maven
-brew install leiningen
-brew install groovy
-brew install sbt
-brew install vert.x
-
-install caskroom/cask/brew-cask
+echo "installing brew packages..."
+packages=(
+  nvm
+  rbenv ruby-build
+  gradle
+  maven
+  leiningen
+  groovy
+  sbt
+  vert.x
+)
+brew install ${packages[@]}
+brew cleanup
 
 #
 # Cask packages
 #
-cask install caskroom/versions/java7
-cask install sublime-text
-cask install moom
-# cask install caffeine
-cask install evernote
-cask install webstorm
-cask install intellij-idea
-cask install mou
-cask install the-unarchiver
-cask install firefox
-cask install google-chrome
-cask install virtualbox
-# cask install utorrent
+echo "installing applications..."
+applications=(
+  sublime-text
+  moom
+  # caffeine
+  evernote
+  webstorm
+  intellij-idea
+  mou
+  the-unarchiver
+  firefox
+  google-chrome
+  virtualbox
+  # utorrent
+)
+brew install caskroom/cask/brew-cask
+brew cask install ${applications[@]}
 
 #
 # Install node
