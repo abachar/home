@@ -13,14 +13,14 @@ mv home/* home/.[^.]* .
 
 #### Install homebrew
 ```bash
+
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 ```
 
-#### Install Applications
+#### Install all
 ```bash
-chmod +x install.sh
-./install.sh
+(mkdir -p /tmp/install && cd /tmp/install && curl -L# https://github.com/abachar/home/archive/master.zipz | tar zx --strip 1 && sh ./install.sh)
 ```
 
 #### Clean
