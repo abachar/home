@@ -50,7 +50,9 @@ brew cask install ${applications[@]}
 
 #
 # Install node
-export NVM_DIR=~/.nvm
+mkdir $HOME/.nvm
+export NVM_DIR=$HOME/.nvm
+source $(brew --prefix nvm)/nvm.sh
 nvm install $node_ver
 nvm use $node_ver
 
