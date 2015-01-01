@@ -30,3 +30,9 @@ cask install firefox
 cask install google-chrome
 cask install virtualbox
 # cask install utorrent
+
+#
+# Install node
+#
+nvm install 0.10.35
+nvm use 0.10.35
