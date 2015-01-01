@@ -1,5 +1,21 @@
 #!/bin/sh
 
+# Copy dot files
+echo "Copying dot files..."
+cp .bash_profile $HOME/
+cp .bashrc $HOME/
+cp .gitconfig $HOME/
+cp .vimrc $HOME/
+
+echo "Sourcing .bash_profile"
+source $HOME/.bash_profile
+
+# Installing homebrew
+echo "Installing homebrew..."
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# Update homebrew
+brew update && brew upgrade brew-cask
+
 #
 # Brew packages
 #
