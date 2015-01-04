@@ -56,6 +56,7 @@ export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
 nvm install $node_ver
 nvm use $node_ver
+nvm alias default $node_ver
 
 #
 # Install ruby
