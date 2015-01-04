@@ -16,6 +16,7 @@ packages=(
 
 # Cask applications
 applications=(
+  caskroom/versions/java7
   sublime-text
   moom
   caffeine
