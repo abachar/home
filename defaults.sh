@@ -1,12 +1,12 @@
 # Terminal
 #
-echo "Costumize Terminal..."
+echo "Costumize Terminal"
 defaults write com.apple.Terminal "Default Window Settings" -string "Pro"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
 
 # Finder
 #
-echo "Costumize Finder..."
+echo "Costumize Finder"
 defaults write com.apple.finder FXPreferredViewStyle Nlsv
 
 # Dock
