@@ -27,7 +27,7 @@ applications=(
   the-unarchiver
   firefox
   google-chrome
-  virtualbox
+  vmware-fusion
   # utorrent
 )
 
