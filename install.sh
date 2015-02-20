@@ -23,6 +23,7 @@ applications=(
   evernote
   webstorm
   intellij-idea
+  android-studio
   mou
   the-unarchiver
   firefox
