@@ -16,8 +16,8 @@ packages=(
 
 # Cask applications
 applications=(
-  caskroom/versions/java7
-  sublime-text
+  java
+  caskroom/versions/sublime-text3
   moom
   caffeine
   evernote
@@ -28,7 +28,7 @@ applications=(
   the-unarchiver
   firefox
   google-chrome
-  vmware-fusion
+  # vmware-fusion
   # utorrent
 )
 
