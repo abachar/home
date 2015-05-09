@@ -12,22 +12,23 @@ packages=(
   groovy
   sbt
   vert.x
+  # mysql
 )
 
 # Cask applications
 applications=(
   java
-  caskroom/versions/sublime-text3
+  atom
   moom
   caffeine
   evernote
   webstorm
   intellij-idea
-  android-studio
   mou
   the-unarchiver
   firefox
   google-chrome
+  vlc
   # vmware-fusion
   # utorrent
 )
