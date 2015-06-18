@@ -18,17 +18,17 @@ packages=(
 # Cask applications
 applications=(
   java
-  atom
+  sublime-text3
   moom
   caffeine
   evernote
-  webstorm
+  # webstorm
   intellij-idea
-  mou
+  # mou
   the-unarchiver
-  firefox
-  google-chrome
-  vlc
+  firefoxdeveloperedition
+  google-chrome-canary
+  # vlc
   # vmware-fusion
   # utorrent
 )
